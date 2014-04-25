@@ -15,20 +15,20 @@ apt-get upgrade -q -y
 apt-get -y -q install curl wget
 
 # install mongodb
-#apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
-#echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" | tee -a /etc/apt/sources.list.d/10gen.list
-#apt-get -y -q update
-#apt-get -y -q install mongodb-10gen
+apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" | tee -a /etc/apt/sources.list.d/10gen.list
+apt-get -y -q update
+apt-get -y -q install mongodb-10gen
 
 # install node.js
-#apt-get install -q -y build-essential curl
-#cd /tmp
-#wget http://nodejs.org/dist/node-latest.tar.gz
-#tar -zxvf node-latest.tar.gz
-#cd node-v*
-#./configure
-#make
-#make install
+apt-get install -q -y build-essential curl
+cd /tmp
+wget http://nodejs.org/dist/node-latest.tar.gz
+tar -zxvf node-latest.tar.gz
+cd node-v*
+./configure
+make
+make install
 
 # install git
 apt-get -q -y git svn
@@ -37,7 +37,6 @@ apt-get -q -y git svn
 ### Set password to ensure unattende installation
 echo mysql-server mysql-server/root_password password PASSWORD | debconf-set-selections
 echo mysql-server mysql-server/root_password_again password PASSWORD | debconf-set-selections
-
 
 apt-get -q -y install tasksel
 tasksel install lamp-server
