@@ -6,7 +6,7 @@ Installation of vagrant
 
 Initialization
 --------------
-`https://github.com/theotheu/vagrant-dev.git`
+`git clone https://github.com/theotheu/vagrant-dev.git`
 
 `cd vagrant-dev`
 
