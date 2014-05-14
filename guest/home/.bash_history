@@ -35,3 +35,4 @@ vagrant ssh
 su -
 exit
 exit
+sudo halt
