@@ -36,8 +36,8 @@ make install
 
 # install lamp
 ### Set password to ensure unattende installation
-echo mysql-server mysql-server/root_password password PASSWORD | debconf-set-selections
-echo mysql-server mysql-server/root_password_again password PASSWORD | debconf-set-selections
+echo mysql-server mysql-server/root_password password vagrant | debconf-set-selections
+echo mysql-server mysql-server/root_password_again password vagrant | debconf-set-selections
 
 apt-get -q -y install tasksel
 tasksel install lamp-server
