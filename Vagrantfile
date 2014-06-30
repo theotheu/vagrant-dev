@@ -20,11 +20,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network "forwarded_port", guest: 80, host: 10080
-  config.vm.network "forwarded_port", guest: 3000, host: 13000
-  config.vm.network "forwarded_port", guest: 3306, host: 13306
-  config.vm.network "forwarded_port", guest: 5432, host: 15432
-
+  config.vm.network "http", guest: 80, host: 10080
+  config.vm.network "node", guest: 3000, host: 13000
+  config.vm.network "mysql", guest: 3306, host: 13306
+  config.vm.network "postgres", guest: 5432, host: 15432
+  config.vm.network "mongo", guest: 27017, host: 17017
+  
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
@@ -43,8 +44,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "./guest/home", "/home/vagrant"
-  config.vm.synced_folder "./guest/www", "/var/www"
+  config.vm.synced_folder ".home", "/home/vagrant"
+  config.vm.synced_folder ".www", "/var/www"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.

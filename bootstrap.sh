@@ -42,6 +42,20 @@ echo mysql-server mysql-server/root_password_again password vagrant | debconf-se
 apt-get -q -y install tasksel
 tasksel install lamp-server
 
+### Set privileges
+service mysql stop
+
+mysql -u root -p'vagrant' <<EOF
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'vagrant' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'vagrant'@'%' IDENTIFIED BY 'vagrant' WITH GRANT OPTION;
+flush privileges;
+EOF
+
+### Edit my.cnf to change listen address to '*'
+sed -i "s/^bind-address/#^bind-address/" "/etc/mysql/my.cnf"
+
+service mysql start
+
 # install java
 ### Unattented install, tnx to http://askubuntu.com/questions/190582/installing-java-automatically-with-silent-option
 echo debconf shared/accepted-oracle-license-v1-1 select true |  sudo debconf-set-selections
