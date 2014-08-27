@@ -38,7 +38,8 @@ Stopping your machine
 ---------------------
 When you execute `vagrant halt`, the machine is halted, but if you loook inspect with virtualbox, you will see that virtualbox did not kill the proces. 
 
-To really close the virtual machine and leaving no processes, the procedure is
+To really close the virtual machine and leaving no processes, the procedure is:
+
 1. Execute in the virtual machine `sudo halt` (vagrant will ask for your vagrant password, which is `vagrant`). This will stop the machine.
 2. In virtualbox, stop the machine.
 
