@@ -10,9 +10,7 @@ Initialization
 
 `cd vagrant-dev`
 
-`vagrant up`
-
-For windows users, see below.
+`vagrant up` For windows users, see below.
 
 Connecting
 ----------
