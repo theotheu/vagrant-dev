@@ -21,31 +21,20 @@ Destroying
 `vagrant destroy`
 
 
-Installation of ojdbc6.jar (optional)
---------------------------
 
-Search at google for actual location of ojdbc6.jar at ```https://www.google.nl/search?q=ojdbc6.jar+download```
 
-You might have to login with yout OTN account.
+Windows
+-------
+Laatste versies van Virtualbox en Vagrant. Eerdere versies veroorzaken problemen.
 
-Accept the license agreement and download the file.
+de PATH omgevingsvariabele moet worden uitgebreid met het pad naar Virtualbox. Op mijn systeem nu b.v: 
 
-Install the plugin with
-`mvn install:install-file -Dfile=./ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.4  -Dpackaging=jar`
+'''Path=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\HashiCorp\Vagrant\bin;C:\Program Files\Oracle\VirtualBox'''
 
-Modify your POM to accomodate the version
-`
-<project ...>
- 
-	<dependencies>>
- 
-		<!-- ORACLE database driver -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0.4</version>
-		</dependency>
- 
-	</dependencies>
-</project>
-`
+(BTW: Ik startte een commandline box in Windows nadat ik Vagrant geinstalleerd had, en toen zat vagrant zelf ook nog niet in het PATH. Maar volgens Windows was dat wel zo. Ik sloot de commandline box, en startte een nieuwe. Dat was voldoende).
+Na een "vagrant up" werkt "vagrant ssh" niet omdat Windows geen commandline SSH client heeft. Sommige online tutorials adviseren om Git te installeren, dan krijg je wel een command-line ssh, en werkt "vagrant ssh" normaal. Mij lijkt het handiger om studenten opdracht te geven met PUTTY in te loggen:
+'''IP: 127.0.0.1'''
+'''port: 2222'''
+'''connection type: SSH'''
+'''username: vagrant'''
+'''password: vagrant'''
