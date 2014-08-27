@@ -21,6 +21,18 @@ Destroying
 `vagrant destroy`
 
 
+Port mapping
+------------
+The following ports are mapped: 
+
+- 22 -> 2222 (ssh)
+- 80 -> 10080 (apache)
+- 3000 -> 13000 (node apps)
+- 3306 -> 13306 (mysql)
+- 27017 -> 17017 (mongo)
+
+To see what apache is serving on your vagrant box, point your browser to http://localhost:10080
+
 
 
 Windows
@@ -44,3 +56,5 @@ Gebruik [PUTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 `username: vagrant`
 
 `password: vagrant`
+
+
