@@ -36,7 +36,7 @@ To see what apache is serving on your vagrant box, point your browser to http://
 
 Stopping your machine
 ---------------------
-When you execute `vagrant halt`, the machine is halted, but if you loook inspect with virtualbox, you will see that virtualbox did not kill the proces. 
+When you execute `vagrant halt`, the machine is halted, but if you inspect with virtualbox, you will see that virtualbox did not kill the proces. 
 
 To really close the virtual machine and leaving no processes, the procedure is:
 
