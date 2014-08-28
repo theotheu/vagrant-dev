@@ -35,6 +35,8 @@ Port mapping
 ------------
 The following ports are mapped: 
 
+Virtual machine on the left, your laptop on the right.
+
 - 22 -> 2222 (ssh)
 - 80 -> 10080 (apache)
 - 3000 -> 13000 (node apps)
