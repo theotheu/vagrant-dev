@@ -19,6 +19,8 @@ Login
 -----
 Mac/Linux users: ```ssh vagrant@localhost -p 2222```
 
+The password is ```vagrant```
+
 For windows users, see below.
 
 Directory mapping
