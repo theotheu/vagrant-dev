@@ -11,7 +11,7 @@ Download [this](https://github.com/theotheu/vagrant-dev/archive/master.zip) repo
 
 Unzip the archive.
 
-`cd vagrant-dev`
+`cd vagrant-dev-master`
 
 `vagrant up` 
 
