@@ -15,7 +15,9 @@ Unzip the archive.
 
 `vagrant up` 
 
-Login for Mac/Linux users: ```ssh vagrant@localhost -p 2222```
+Login 
+-----
+Mac/Linux users: ```ssh vagrant@localhost -p 2222```
 
 For windows users, see below.
 
