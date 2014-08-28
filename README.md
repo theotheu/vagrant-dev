@@ -6,9 +6,8 @@ Installation of vagrant
 
 Initialization
 --------------
-Donload [this](https://github.com/theotheu/vagrant-dev/archive/master.zip) repository as winzip to your local desktop.
+Download [this](https://github.com/theotheu/vagrant-dev/archive/master.zip) repository as winzip to your local desktop.
 
-See the button on your right on this page.
 
 Unzip the archive.
 
