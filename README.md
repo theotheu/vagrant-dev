@@ -21,6 +21,15 @@ Mac/Linux users: ```ssh vagrant@localhost -p 2222```
 
 For windows users, see below.
 
+Directory mapping
+-----------------
+You can access directories on the virtual machine.
+
+The following directories are mapped:
+
+- ```/home/vagrant``` (virtual machine) -> ```vagrant-dev-master/vagrant``` (your laptop)
+- ```/var/www``` (virtual machine) ->  ```vagrant-dev-master/www``` (your laptop)
+
 
 Port mapping
 ------------
