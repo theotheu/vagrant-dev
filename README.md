@@ -6,19 +6,15 @@ Installation of vagrant
 
 Initialization
 --------------
-`git clone https://github.com/theotheu/vagrant-dev.git`
+Donload [this](https://github.com/theotheu/vagrant-dev/archive/master.zip) repository as winzip to your local desktop.
+
+See the button on your right on this page.
+
+Unzip the archive.
 
 `cd vagrant-dev`
 
 `vagrant up` For windows users, see below.
-
-Connecting
-----------
-`vagrant ssh`
-
-Destroying
-----------
-`vagrant destroy`
 
 
 Port mapping
