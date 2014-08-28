@@ -13,7 +13,11 @@ Unzip the archive.
 
 `cd vagrant-dev`
 
-`vagrant up` For windows users, see below.
+`vagrant up` 
+
+Login for Mac/Linux users: ```ssh vagrant@localhost -p 2222```
+
+For windows users, see below.
 
 
 Port mapping
