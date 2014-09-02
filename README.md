@@ -103,6 +103,11 @@ To really close the virtual machine and leaving no processes, the procedure is:
 4. Execute ```vagrant up```. ! :)
 
 
+1. Make sure you have 64 bit enabled.
+2. Make sure you have virtualization in your BIOS enabled.
+3. 
+
+
 99.2 Troubleshooting (windows)
 ----------
 
