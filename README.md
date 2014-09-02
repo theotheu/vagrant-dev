@@ -98,9 +98,9 @@ To really close the virtual machine and leaving no processes, the procedure is:
 ![Troubleshooting](http://i.imgur.com/reeoD1D.png)
 
 1. Remove Oracle virtualbox
-2. Download older version, eg. [4.3.12 https://www.virtualbox.org/wiki/Download_Old_Builds_4_3](4.3.12 https://www.virtualbox.org/wiki/Download_Old_Builds_4_3)
-3 New install 
-4 Execute ```vagrant up```. ! :)
+2. Download an older version, eg. [4.3.12 https://www.virtualbox.org/wiki/Download_Old_Builds_4_3](4.3.12 https://www.virtualbox.org/wiki/Download_Old_Builds_4_3)
+3. New install 
+4. Execute ```vagrant up```. ! :)
 
 
 99.2 Troubleshooting (windows)
@@ -117,7 +117,7 @@ This is **not** an error and can be ignored. Just click OK.
 
 ![Troubleshooting](http://i.imgur.com/pxgkMqE.png)
 
-Happens in some installationf after starting virtualbox.
+Happens in some installations after starting virtualbox.
 
 This is **not** an error and can be ignored. Just click OK.
 
