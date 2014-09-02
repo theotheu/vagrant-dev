@@ -42,7 +42,7 @@ You can access directories on the virtual machine.
 
 The following directories are mapped:
 
-- ```/home/vagrant``` (virtual machine) -> ```vagrant-dev-master/vagrant``` (your laptop)
+- ```/home/vagrant``` (virtual machine) -> ```vagrant-dev-master/home``` (your laptop)
 - ```/var/www``` (virtual machine) ->  ```vagrant-dev-master/www``` (your laptop)
 
 
