@@ -85,3 +85,52 @@ To really close the virtual machine and leaving no processes, the procedure is:
       -  keep in mind that teh PATH variable wants semi-colons '**;**' between direcories on the path. So the
          last part of the PATH should look like this (if you've installed everything in the default location:
          `;C:\HashiCorp\Vagrant\bin;C:\Program Files\Oracle\VirtualBox` (note the semi-colons).
+
+
+99.1 Troubelshooting (windows)
+--------
+
+[Imgur](http://i.imgur.com/reeoD1D)
+
+1. Remove Oracle virtualbox
+2. Download older version, eg. [4.3.12 https://www.virtualbox.org/wiki/Download_Old_Builds_4_3](4.3.12 https://www.virtualbox.org/wiki/Download_Old_Builds_4_3)
+3 New install 
+4 Execute ```vagrant up```. ! :)
+
+
+99.2 Troubleshooting (windows)
+----------
+
+[Imgur](http://i.imgur.com/pxgkMqE)
+
+This error appears when installing vagrant after virtualbox.
+
+This is **not** an error and can be ignored. Just click OK.
+
+99.3 Troubleshooting (windows)
+----------
+
+[Imgur](http://i.imgur.com/pxgkMqE)
+
+Happens in some installationf after starting virtualbox.
+
+This is **not** an error and can be ignored. Just click OK.
+
+NOTE: Never, ever start the vagrant box from within virtualbox. The only way you can start vagrant, is by executing ```vagrant up```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
