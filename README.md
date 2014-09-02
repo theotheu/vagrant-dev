@@ -106,7 +106,7 @@ To really close the virtual machine and leaving no processes, the procedure is:
 99.2 Troubleshooting (windows)
 ----------
 
-![Troubleshooting](http://i.imgur.com/pxgkMqE.png)
+![Troubleshooting](http://i.imgur.com/R77oCWZ.png)
 
 This error appears when installing vagrant after virtualbox.
 
