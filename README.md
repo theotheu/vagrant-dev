@@ -21,7 +21,6 @@ _Windows users: follow the additional step in section 99 below._
 NOTE: Never, ever start the vagrant box from within virtualbox. The only way you can start vagrant, is by executing ```vagrant up```
 
 
-
 3. Login
 -----
 Mac/Linux users: `ssh vagrant@localhost -p 2222`
