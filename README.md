@@ -17,6 +17,11 @@ _Windows users: follow the additional step in section 99 below._
 
 `vagrant up`
 
+
+NOTE: Never, ever start the vagrant box from within virtualbox. The only way you can start vagrant, is by executing ```vagrant up```
+
+
+
 3. Login
 -----
 Mac/Linux users: `ssh vagrant@localhost -p 2222`
@@ -37,7 +42,7 @@ You can access directories on the virtual machine.
 
 The following directories are mapped:
 
-- ```/home/vagrant``` (virtual machine) -> ```vagrant-dev-master/vagrant``` (your laptop)
+- ```/home/vagrant``` (virtual machine) -> ```vagrant-dev-master/home``` (your laptop)
 - ```/var/www``` (virtual machine) ->  ```vagrant-dev-master/www``` (your laptop)
 
 
@@ -85,3 +90,58 @@ To really close the virtual machine and leaving no processes, the procedure is:
       -  keep in mind that teh PATH variable wants semi-colons '**;**' between direcories on the path. So the
          last part of the PATH should look like this (if you've installed everything in the default location:
          `;C:\HashiCorp\Vagrant\bin;C:\Program Files\Oracle\VirtualBox` (note the semi-colons).
+
+
+99.1 Troubelshooting (windows)
+--------
+
+![Troubleshooting](http://i.imgur.com/reeoD1D.png)
+
+1. Remove Oracle virtualbox
+2. Download an older version, eg. [4.3.12 https://www.virtualbox.org/wiki/Download_Old_Builds_4_3](4.3.12 https://www.virtualbox.org/wiki/Download_Old_Builds_4_3)
+3. New install 
+4. Execute ```vagrant up```. ! :)
+
+
+Furthermore
+- Make sure you have 64 bit enabled.
+- Make sure you have virtualization in your BIOS enabled.
+ 
+
+
+99.2 Troubleshooting (windows)
+----------
+
+![Troubleshooting](http://i.imgur.com/R77oCWZ.png)
+
+This error appears when installing vagrant after virtualbox.
+
+This is **not** an error and can be ignored. Just click OK.
+
+99.3 Troubleshooting (windows)
+----------
+
+![Troubleshooting](http://i.imgur.com/pxgkMqE.png)
+
+Happens in some installations after starting virtualbox.
+
+This is **not** an error and can be ignored. Just click OK.
+
+NOTE: Never, ever start the vagrant box from within virtualbox. The only way you can start vagrant, is by executing ```vagrant up```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
